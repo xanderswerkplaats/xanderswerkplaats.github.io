@@ -19,5 +19,32 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+</head>
+<body>
+    <label for="menu">Kies een optie:</label>
+    <select id="menu">
+        <option value="optie1">Optie 1</option>
+        <option value="optie2">Optie 2</option>
+        <option value="optie3">Optie 3</option>
+        <option value="optie4">Optie 4</option>
+    </select>
+
+    <p>Geselecteerde optie: <span id="geselecteerdeOptie"></span></p>
+
+    <script>
+        // JavaScript om de geselecteerde optie weer te geven
+        var dropdown = document.getElementById("menu");
+        var resultaat = document.getElementById("geselecteerdeOptie");
+
+        dropdown.addEventListener("change", function() {
+            resultaat.textContent = dropdown.value;
+        });
+    </script>
+</body>
+</html>
 
  
