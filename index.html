@@ -19,32 +19,39 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dropdown Menu</title>
-</head>
-<body>
-    <label for="menu">Kies een optie:</label>
-    <select id="menu">
-        <option value="optie1">Optie 1</option>
-        <option value="optie2">Optie 2</option>
-        <option value="optie3">Optie 3</option>
-        <option value="optie4">Optie 4</option>
-    </select>
+<!DOCTYPE html> <!--pagina over binair stelsel-->
+<html> 
+	<head>
+		
+		<title>Binair stelsel</title>
+        <link rel="stylesheet" href="/layout.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
 
-    <p>Geselecteerde optie: <span id="geselecteerdeOptie"></span></p>
+<ul class="top-level-menu">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li>
+        <a href="#">3lagenmodel</a>
+        <ul class="second-level-menu">
+            <li><a href="#">Toepassingenlaag</a></li>
+            <li><a href="#">Logische laag</a></li>
+            <li><a href="#">Fysieke laag</a></li>
+            <li>
+                <a href="#">New York</a>
+                <ul class="third-level-menu">
+                    <li><a href="/html/cpu.html">CPU</a></li>
+                    <li><a href="#">Book a Meeting</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Seattle</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+</ul>
 
-    <script>
-        // JavaScript om de geselecteerde optie weer te geven
-        var dropdown = document.getElementById("menu");
-        var resultaat = document.getElementById("geselecteerdeOptie");
-
-        dropdown.addEventListener("change", function() {
-            resultaat.textContent = dropdown.value;
-        });
-    </script>
 </body>
 </html>
-
- 
