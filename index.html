@@ -1,57 +1,53 @@
 
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hidde's website</title>
+    <style>
+        /* Basisstijlen voor het dropdown-menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000000;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Stijlen voor de dropdown-opties */
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #adabab;
+        }
+    </style>
 </head>
 <body>
     <div class="dropdown">
-        <button>menu</button>
+        <button>Dropdown</button>
         <div class="dropdown-content">
             <a href="index.html">home</a>
             <a href="binarystelsel.html">binairstelsel</a>
             <a href="kleurmodel.html">kleurmodel</a>
             <a href="afbeeldingenenaudio.html">afbeeldingen en audio</a>
+            <a href="infohardware.html"> informatie over hardware</a>
         </div>
     </div>
-</body>
-</html>
-
-<!DOCTYPE html> <!--pagina over binair stelsel-->
-<html> 
-	<head>
-		
-		<title>Binair stelsel</title>
-        <link rel="stylesheet" href="/layout.css">
-		<meta charset="utf-8">
-	</head>
-	<body>
-
-<ul class="top-level-menu">
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="#">Services</a></li>
-    <li>
-        <a href="#">3lagenmodel</a>
-        <ul class="second-level-menu">
-            <li><a href="#">Toepassingenlaag</a></li>
-            <li><a href="#">Logische laag</a></li>
-            <li><a href="#">Fysieke laag</a></li>
-            <li>
-                <a href="#">New York</a>
-                <ul class="third-level-menu">
-                    <li><a href="/html/cpu.html">CPU</a></li>
-                    <li><a href="#">Book a Meeting</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Jobs</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Seattle</a></li>
-        </ul>
-    </li>
-    <li><a href="#">Contact</a></li>
-</ul>
-
 </body>
 </html>
