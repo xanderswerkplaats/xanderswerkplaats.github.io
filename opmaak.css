@@ -1,70 +1,46 @@
-ul{
-    list-style-type: none;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
     padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Poppins', monospace;
 }
-body {
-    background-color: rgb(225, 225, 225);
-  }
-  
-  h1 {
-    color: rgb(0, 255, 30);
-    text-align: center;
-  }
-  h2 {
-  color: rgb(0, 255, 30);
-  text-align: left;
-  }
-  p {
-    color: rgb(0, 255, 30);
-    text-align: left;
-    
-  }
-  img { 
-    display: block;
-    margin-left: 520px;
-    margin-right: auto;
-    width: 30%;
-  }
-  
-  li{
-   float:left;
-   display: block;
-   color: rgb(0, 255, 10);
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
-  }
-  
-  /* Basisstijlen voor het dropdown-menu */
-  .dropdown {
-    position: relative;
+
+ul {
+    list-style: none;
+    background: #8c52ff;
+}
+
+ul li {
     display: inline-block;
+    position: relative;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
+ul li a {
     display: block;
-}
-
-/* Stijlen voor de dropdown-opties */
-.dropdown-content a {
-    padding: 12px 16px;
+    padding: 20px 25px;
+    color: #FFF;
     text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #adabab;
+ul li ul.dropdown {
+    width: 100%;
+    background: #8c52ff;
+    position: absolute;
+    z-index: 999;
+    display: none;
 }
 
+ul li a:hover {
+    background: #6d30e9;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
